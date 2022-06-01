@@ -1,0 +1,24 @@
+connector:
+  name: GitPr3
+  identifier: GitPr3
+  description:
+  orgIdentifier: default
+  projectIdentifier: VikasGitPr3
+  type: Github
+  spec:
+    url: https://github.com/VikasChowdary/GitPr3
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: Vikas
+          tokenRef: PatForGithub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: PatForGithub
+    delegateSelectors:
+    - pl-play
+    executeOnDelegate: true
+    type: Repo
