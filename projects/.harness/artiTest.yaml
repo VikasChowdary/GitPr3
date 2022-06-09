@@ -1,0 +1,13 @@
+connector:
+  name: artiTest
+  identifier: artiTest
+  description:
+  orgIdentifier: default
+  projectIdentifier: VikasGitPr3
+  type: Artifactory
+  spec:
+    artifactoryServerUrl: test.com
+    auth:
+      type: Anonymous
+    delegateSelectors:
+    - iam-role-delegate
